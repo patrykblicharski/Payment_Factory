@@ -7,15 +7,19 @@ namespace Bankowosc
 {
     public class ProcesorPlatnosci
     {
-        private IBramkaBanku bramka;
+        
+       
 
         public void ProcesujPlatnoscProdukt(eNazwyBankow enuBanku, Produkt produkt)
         {
 
-            BramkaPlatnosciFabryka fabryka = new BramkaPlatnosciFabryka();
-                bramka = fabryka.UtworzBramkeBanku(enuBanku);
+            
+               using( BramkaPlatnosciFabryka fabryka = new BramkaPlatnosciFabryka())
+               {
+                IBramkaBanku bramka = fabryka.UtworzBramkeBanku(enuBanku);
                 bramka.DokonajPlatnosci(produkt);
-
+               }
+                
 
         }
     }

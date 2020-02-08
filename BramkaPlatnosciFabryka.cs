@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices;
 using Bankowosc.BramkiBank;
 using Bankowosc.Enum;
 using Bankowosc.Interface;
-using Microsoft.Win32.SafeHandles;
 
 namespace Bankowosc
 {
-    public class BramkaPlatnosciFabryka
+    public class BramkaPlatnosciFabryka:IDisposable
     {
+        public void Dispose()
+        {
+           Console.WriteLine("--->Czyszczenie instancji bramki...");
+        }
+
         public virtual IBramkaBanku UtworzBramkeBanku(eNazwyBankow wyborBankow)
         {
             IBramkaBanku bramka = null;

@@ -8,6 +8,7 @@ namespace Bankowosc.BramkiBank
 {
     public class mBank : IBramkaBanku
     {
+        ~mBank(){ System.Console.WriteLine("--->Zabito obiekt");}
 
         public void DokonajPlatnosci(Produkt produkt)
         {
