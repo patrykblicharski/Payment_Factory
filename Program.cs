@@ -15,9 +15,10 @@ namespace Bankowosc
             produkt.Opis = "Trwała, wygodna, produkcji Amerykańskiej";
 
             procesorPlatnosci.ProcesujPlatnoscProdukt(eNazwyBankow.mBank,produkt);
+            
             //------------------------------------------------------------------
-            
-            
+            procesorPlatnosci = null;
+
             Console.WriteLine("Hello World!");
             
         }

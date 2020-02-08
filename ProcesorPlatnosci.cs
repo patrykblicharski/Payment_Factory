@@ -1,4 +1,5 @@
-﻿using Bankowosc.Enum;
+﻿using System;
+using Bankowosc.Enum;
 using Bankowosc.Interface;
 using Bankowosc.Model;
 
@@ -10,10 +11,12 @@ namespace Bankowosc
 
         public void ProcesujPlatnoscProdukt(eNazwyBankow enuBanku, Produkt produkt)
         {
+
             BramkaPlatnosciFabryka fabryka = new BramkaPlatnosciFabryka();
-            this.bramka = fabryka.UtworzBramkeBanku(enuBanku);
-            this.bramka.DokonajPlatnosci(produkt);
-            
+                bramka = fabryka.UtworzBramkeBanku(enuBanku);
+                bramka.DokonajPlatnosci(produkt);
+
+
         }
     }
 }
