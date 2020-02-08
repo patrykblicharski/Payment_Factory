@@ -1,0 +1,11 @@
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.exe
+C:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.deps.json
+C:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.runtimeconfig.json
+C:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.runtimeconfig.dev.json
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.dll
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\bin\Debug\netcoreapp3.1\Bankowosc.pdb
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\obj\Debug\netcoreapp3.1\Bankowosc.csprojAssemblyReference.cache
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\obj\Debug\netcoreapp3.1\Bankowosc.AssemblyInfoInputs.cache
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\obj\Debug\netcoreapp3.1\Bankowosc.AssemblyInfo.cs
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\obj\Debug\netcoreapp3.1\Bankowosc.dll
+c:\Users\Blacha14\Dropbox\___Visual Studio Projects2019\Bankowosc\Bankowosc\obj\Debug\netcoreapp3.1\Bankowosc.pdb
