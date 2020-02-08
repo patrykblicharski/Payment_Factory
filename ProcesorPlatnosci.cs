@@ -13,6 +13,7 @@ namespace Bankowosc
             BramkaPlatnosciFabryka fabryka = new BramkaPlatnosciFabryka();
             this.bramka = fabryka.UtworzBramkeBanku(enuBanku);
             this.bramka.DokonajPlatnosci(produkt);
+            
         }
     }
 }

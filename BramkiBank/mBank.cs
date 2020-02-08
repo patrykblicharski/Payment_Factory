@@ -8,7 +8,16 @@ namespace Bankowosc.BramkiBank
     {
         public void DokonajPlatnosci(Produkt produkt)
         {
+            
             Console.WriteLine("->Instancja bramki {0}",GetType());
+            Console.WriteLine("->>Dokonywanie płatnosci za towar:");
+            Console.WriteLine("Nazwa:{0}\nOpis:{1}\nCena:{2}");
+            
+
+        }
+        ~mBank()
+        {
+            Console.WriteLine("->Instancja dokonała żywota");
         }
     }
 }
