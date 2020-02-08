@@ -4,7 +4,8 @@ namespace Bankowosc.Interface
 {
     public interface IBramkaBanku
     {
-        void DokonajPlatnosci(Produkt produkt);
+        void DokonajPlatnosci(Produkt produkt, Konto konto);
+        
         //list of products (koszyk)
     }
 }

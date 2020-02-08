@@ -2,6 +2,7 @@
 using Bankowosc.BramkiBank;
 using Bankowosc.Enum;
 using Bankowosc.Interface;
+using Bankowosc.Tools;
 
 namespace Bankowosc
 {
@@ -9,9 +10,21 @@ namespace Bankowosc
     {
         public void Dispose()
         {
-           Console.WriteLine("--->Czyszczenie instancji bramki...");
+                                                                                            CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkBlue, ConsoleColor.White);
+
+            Console.WriteLine("--->Uwolniono Instancje bramki {0}", GetType());
+
+                                                                                               CColor.ResetCColor();
         }
 
+        public BramkaPlatnosciFabryka()
+        {
+                                                                                                CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkBlue, ConsoleColor.White);
+
+            Console.WriteLine("--->Uwolniono Instancje bramki {0}", GetType());
+
+                                                                                                 CColor.ResetCColor();
+        }
         public virtual IBramkaBanku UtworzBramkeBanku(eNazwyBankow wyborBankow)
         {
             IBramkaBanku bramka = null;

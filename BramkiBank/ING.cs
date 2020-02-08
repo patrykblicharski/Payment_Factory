@@ -4,14 +4,20 @@ using Bankowosc.Model;
 
 namespace Bankowosc.BramkiBank
 {
-    public class ING:IBramkaBanku
+    public class ING : OperacjeBankowe, IBramkaBanku
     {
-        public void DokonajPlatnosci(Produkt produkt)
+        public void DokonajPlatnosci(Produkt produkt, Konto konto)
         {
+
             Console.WriteLine("--->Instancja bramki {0}", GetType());
-            Console.WriteLine("->>Dokonywanie płatnosci za towar:");
-            Console.WriteLine(">Nazwa:{0} || Opis:{1} || Cena:{2}", produkt.Nazwa, produkt.Opis, produkt.Cena);
-            Console.WriteLine("->>Dokonano płatnosci");
+            Console.WriteLine("---->Sprawdzanie srodkow na koncie");
+            if (Wyplata(produkt.Cena, konto))
+                Console.WriteLine("---->Pobrano platnosc");
+            else
+            {
+                Console.WriteLine("!!!!!!!!!!!!!!!!!ODRZUT!!!!!!!!!!!!!!!!!");
+                Console.WriteLine("!!!!!!!!!!!!!!BRAK SRODKOW!!!!!!!!!!!!!!");
+            }
         }
     }
 }
