@@ -15,15 +15,16 @@ namespace Bankowosc
             Console.WriteLine("--->Uwolniono Instancje bramki {0}", GetType());
 
                                                                                                CColor.ResetCColor();
+                                                                                               
         }
 
         public BramkaPlatnosciFabryka()
         {
                                                                                                 CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkBlue, ConsoleColor.White);
 
-            Console.WriteLine("--->Uwolniono Instancje bramki {0}", GetType());
+            Console.WriteLine("--->Utworzono Instancje bramki {0}", GetType());
 
-                                                                                                 CColor.ResetCColor();
+                                                                                                 CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.Black, ConsoleColor.White);
         }
         public virtual IBramkaBanku UtworzBramkeBanku(eNazwyBankow wyborBankow)
         {

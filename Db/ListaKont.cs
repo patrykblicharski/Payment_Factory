@@ -13,7 +13,7 @@ namespace Bankowosc.Db
          List<Konto> ListaKont = new List<Konto>();
 
             ListaKont.Add(new Konto(new Klient("Patryk", "Blicharski", "blacha14@gmail.com"),2227772,500, eNazwyBankow.mBank ));
-            ListaKont.Add(new Konto(new Klient("Benek", "Pierdoła", "głupi@chuj.com"), 333452,20, eNazwyBankow.mBank ));
+            ListaKont.Add(new Konto(new Klient("Benek", "Pierdoła", "głupi@chuj.com"), 333452,20, eNazwyBankow.Santander ));
 
 
         return ListaKont;

@@ -17,7 +17,7 @@ namespace Bankowosc.BramkiBank
                                                                              CColor.ResetCColor();  CColor.SetCcolor(ConsoleColor.DarkRed,ConsoleColor.White); 
             Console.WriteLine("--->Instancja bramki {0}", GetType());
                                                                              CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkYellow, ConsoleColor.Black);
-            Console.WriteLine("---->Sprawdzanie srodkow na koncie");
+            Console.WriteLine("---->Sprawdzanie srodkow na koncie"); //CColor.ResetCColor();
             if (Wyplata(produkt.Cena, konto))
             {
                                                                                 CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkGreen, ConsoleColor.White);  
@@ -26,8 +26,8 @@ namespace Bankowosc.BramkiBank
             else
             {
                                                                                 CColor.ResetCColor(); CColor.SetCcolor(ConsoleColor.DarkRed, ConsoleColor.White);
-                Console.WriteLine("!!!!!!!!!!!!!!!!!ODRZUT!!!!!!!!!!!!!!!!!");
-                Console.WriteLine("!!!!!!!!!!!!!!BRAK SRODKOW!!!!!!!!!!!!!!");
+                
+                Console.WriteLine("!!!!!!!!!!!!!ODRZUT BRAK SRODKOW!!!!!!!!!!!!!!");
                                                                                 CColor.ResetCColor();
             }
             

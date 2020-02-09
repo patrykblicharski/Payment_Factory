@@ -33,7 +33,10 @@ namespace Bankowosc
 
             ProcesorPlatnosci procesorPlatnosci = new ProcesorPlatnosci();
             procesorPlatnosci.ProcesujKoszykPlatnosci(listaKont[0],koszykPlatnosci.Koszyk);
-            
+            Console.ReadLine();
+            ProcesorPlatnosci procesorPlatnosci2 = new ProcesorPlatnosci();
+            procesorPlatnosci2.ProcesujKoszykPlatnosci(listaKont[1], koszykPlatnosci.Koszyk);
+
             Console.ReadLine();
         }
     }
