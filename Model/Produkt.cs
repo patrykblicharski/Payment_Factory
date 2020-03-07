@@ -1,6 +1,8 @@
-﻿namespace Bankowosc.Model
+﻿using Bankowosc.Interface;
+
+namespace Bankowosc.Model
 {
-    public class Produkt
+    public class Produkt:IProdukt
     {
         public string Nazwa { get; set; }
         public string Opis { get; set; }

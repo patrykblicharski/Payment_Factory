@@ -1,14 +1,16 @@
-﻿namespace Bankowosc.Model
-{
-    public class Klient
-    {
-        public string imie { get; }
-        public string Nazwisko { get; }
+﻿using Bankowosc.Interface;
 
-        public string Email { get; }
+namespace Bankowosc.Model
+{
+    public class Klient: IOsoba
+    {
+        public string Imie { get; set; }
+        public string Nazwisko { get; set; }
+        public string Email { get; set; }
+
         public Klient(string imie, string nazwisko, string email)
         {
-            this.imie = imie;
+            this.Imie = imie;
             this.Nazwisko = nazwisko;
             Email = email;
         }
